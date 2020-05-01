@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		361417F7F76199E84678885E /* libPods-EZ Wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 550ECC05833DF3EA0384C784 /* libPods-EZ Wallet.a */; };
+		400AA952243F950F00081104 /* VcAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AA951243F950F00081104 /* VcAbout.swift */; };
+		400AA954243F9F9600081104 /* MoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AA953243F9F9600081104 /* MoneyFormatter.swift */; };
+		400F0C27241F7BAE0061AE70 /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400F0C26241F7BAE0061AE70 /* Year.swift */; };
+		400F0C30241F83850061AE70 /* ConstantsSqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400F0C2F241F83850061AE70 /* ConstantsSqlite.swift */; };
+		4023D82E241F6BB20068238D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D82D241F6BB20068238D /* AppDelegate.swift */; };
+		4023D830241F6BB20068238D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D82F241F6BB20068238D /* SceneDelegate.swift */; };
+		4023D832241F6BB20068238D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D831241F6BB20068238D /* ViewController.swift */; };
+		4023D835241F6BB20068238D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4023D833241F6BB20068238D /* Main.storyboard */; };
+		4023D838241F6BB20068238D /* EZ_Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4023D836241F6BB20068238D /* EZ_Wallet.xcdatamodeld */; };
+		4023D83A241F6BB40068238D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4023D839241F6BB40068238D /* Assets.xcassets */; };
+		4023D83D241F6BB40068238D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4023D83B241F6BB40068238D /* LaunchScreen.storyboard */; };
+		4023D847241F6F040068238D /* TableViewCellMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D846241F6F040068238D /* TableViewCellMonth.swift */; };
+		4023D84C241F71C20068238D /* SuperGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D84B241F71C20068238D /* SuperGlobals.swift */; };
+		4023D84E241F74B80068238D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D84D241F74B80068238D /* Constants.swift */; };
+		4023D851241F75DC0068238D /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4023D850241F75DC0068238D /* Month.swift */; };
+		40276216242D2FFA0038DC56 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40276215242D2FFA0038DC56 /* About.storyboard */; };
+		4030235F242225C000352ABF /* VcLending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030235E242225C000352ABF /* VcLending.swift */; };
+		40302365242231E500352ABF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40302364242231E500352ABF /* Transaction.swift */; };
+		4030236924223BA400352ABF /* VcStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030236824223BA300352ABF /* VcStatistics.swift */; };
+		4030236D24223BE500352ABF /* TableViewCellTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030236C24223BE500352ABF /* TableViewCellTransaction.swift */; };
+		4030730424206033006FEB48 /* VcMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030730324206033006FEB48 /* VcMonth.swift */; };
+		4030730D24206085006FEB48 /* VcCreateExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030730C24206085006FEB48 /* VcCreateExpense.swift */; };
+		4030730F242060AC006FEB48 /* VcCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030730E242060AC006FEB48 /* VcCategories.swift */; };
+		40307311242062CC006FEB48 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40307310242062CC006FEB48 /* Expense.swift */; };
+		403073142420636E006FEB48 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403073132420636E006FEB48 /* Category.swift */; };
+		4030731624206AD8006FEB48 /* TableViewCellCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4030731524206AD8006FEB48 /* TableViewCellCategory.swift */; };
+		403073192420817D006FEB48 /* AlertControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403073182420817D006FEB48 /* AlertControllerManager.swift */; };
+		4037FA39242125DD006CEB43 /* Spending.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4037FA38242125DD006CEB43 /* Spending.storyboard */; };
+		4037FA3B242125EC006CEB43 /* Lending.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4037FA3A242125EB006CEB43 /* Lending.storyboard */; };
+		4037FA3D2421260A006CEB43 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4037FA3C2421260A006CEB43 /* Statistics.storyboard */; };
+		4037FA3F24212618006CEB43 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4037FA3E24212618006CEB43 /* Help.storyboard */; };
+		403E42AB242DD13700560302 /* CollectionViewCellHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E42AA242DD13700560302 /* CollectionViewCellHelp.swift */; };
+		40402A81242DD3FD00346AC2 /* VcHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40402A80242DD3FD00346AC2 /* VcHelp.swift */; };
+		406ADC592428E93900DAAE66 /* VcEditBorrowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406ADC582428E93900DAAE66 /* VcEditBorrowEvent.swift */; };
+		40CA799B2421ABAA007AF0A2 /* VcEditExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA799A2421ABAA007AF0A2 /* VcEditExpense.swift */; };
+		40E6CAE3242DAB6400382E9D /* ConstantsUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6CAE2242DAB6400382E9D /* ConstantsUserDefaults.swift */; };
+		40EE2B782422503800B4E59B /* BorrowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE2B772422503800B4E59B /* BorrowEvent.swift */; };
+		40EE2B812422514400B4E59B /* TableViewCellBorrowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE2B802422514400B4E59B /* TableViewCellBorrowEvent.swift */; };
+		40EE2B832422813200B4E59B /* VcCreateBorrowEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EE2B822422813200B4E59B /* VcCreateBorrowEvent.swift */; };
+		40EEC2772420E7620019AE8A /* TableViewCellExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EEC2762420E7620019AE8A /* TableViewCellExpense.swift */; };
+		40F2931924285E8F001F5285 /* VcBorrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2931824285E8F001F5285 /* VcBorrower.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		400AA951243F950F00081104 /* VcAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcAbout.swift; sourceTree = "<group>"; };
+		400AA953243F9F9600081104 /* MoneyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatter.swift; sourceTree = "<group>"; };
+		400F0C26241F7BAE0061AE70 /* Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year.swift; sourceTree = "<group>"; };
+		400F0C2F241F83850061AE70 /* ConstantsSqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsSqlite.swift; sourceTree = "<group>"; };
+		4023D82A241F6BB20068238D /* EZ Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZ Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4023D82D241F6BB20068238D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4023D82F241F6BB20068238D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4023D831241F6BB20068238D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4023D834241F6BB20068238D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4023D837241F6BB20068238D /* EZ_Wallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EZ_Wallet.xcdatamodel; sourceTree = "<group>"; };
+		4023D839241F6BB40068238D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4023D83C241F6BB40068238D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4023D83E241F6BB40068238D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4023D846241F6F040068238D /* TableViewCellMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMonth.swift; sourceTree = "<group>"; };
+		4023D84B241F71C20068238D /* SuperGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperGlobals.swift; sourceTree = "<group>"; };
+		4023D84D241F74B80068238D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4023D850241F75DC0068238D /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
+		40276215242D2FFA0038DC56 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		4030235E242225C000352ABF /* VcLending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcLending.swift; sourceTree = "<group>"; };
+		40302364242231E500352ABF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4030236824223BA300352ABF /* VcStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcStatistics.swift; sourceTree = "<group>"; };
+		4030236C24223BE500352ABF /* TableViewCellTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellTransaction.swift; sourceTree = "<group>"; };
+		4030730324206033006FEB48 /* VcMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcMonth.swift; sourceTree = "<group>"; };
+		4030730C24206085006FEB48 /* VcCreateExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcCreateExpense.swift; sourceTree = "<group>"; };
+		4030730E242060AC006FEB48 /* VcCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcCategories.swift; sourceTree = "<group>"; };
+		40307310242062CC006FEB48 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		403073132420636E006FEB48 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4030731524206AD8006FEB48 /* TableViewCellCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCategory.swift; sourceTree = "<group>"; };
+		403073182420817D006FEB48 /* AlertControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerManager.swift; sourceTree = "<group>"; };
+		4037FA38242125DD006CEB43 /* Spending.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Spending.storyboard; sourceTree = "<group>"; };
+		4037FA3A242125EB006CEB43 /* Lending.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lending.storyboard; sourceTree = "<group>"; };
+		4037FA3C2421260A006CEB43 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		4037FA3E24212618006CEB43 /* Help.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Help.storyboard; sourceTree = "<group>"; };
+		403E42AA242DD13700560302 /* CollectionViewCellHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellHelp.swift; sourceTree = "<group>"; };
+		40402A80242DD3FD00346AC2 /* VcHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VcHelp.swift; sourceTree = "<group>"; };
+		406ADC582428E93900DAAE66 /* VcEditBorrowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcEditBorrowEvent.swift; sourceTree = "<group>"; };
+		40CA799A2421ABAA007AF0A2 /* VcEditExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcEditExpense.swift; sourceTree = "<group>"; };
+		40E6CAE2242DAB6400382E9D /* ConstantsUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsUserDefaults.swift; sourceTree = "<group>"; };
+		40EE2B772422503800B4E59B /* BorrowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowEvent.swift; sourceTree = "<group>"; };
+		40EE2B802422514400B4E59B /* TableViewCellBorrowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellBorrowEvent.swift; sourceTree = "<group>"; };
+		40EE2B822422813200B4E59B /* VcCreateBorrowEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcCreateBorrowEvent.swift; sourceTree = "<group>"; };
+		40EEC2762420E7620019AE8A /* TableViewCellExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellExpense.swift; sourceTree = "<group>"; };
+		40F2931824285E8F001F5285 /* VcBorrower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcBorrower.swift; sourceTree = "<group>"; };
+		550ECC05833DF3EA0384C784 /* libPods-EZ Wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EZ Wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9F8920A6C5ACB8DD03E0F4 /* Pods-EZ Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZ Wallet.debug.xcconfig"; path = "Target Support Files/Pods-EZ Wallet/Pods-EZ Wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		A8762758F88D644C6065BEAD /* Pods-EZ Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZ Wallet.release.xcconfig"; path = "Target Support Files/Pods-EZ Wallet/Pods-EZ Wallet.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4023D827241F6BB20068238D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				361417F7F76199E84678885E /* libPods-EZ Wallet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A6193F63D65EE1010A7714F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E9F8920A6C5ACB8DD03E0F4 /* Pods-EZ Wallet.debug.xcconfig */,
+				A8762758F88D644C6065BEAD /* Pods-EZ Wallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4023D821241F6BB20068238D = {
+			isa = PBXGroup;
+			children = (
+				4023D82C241F6BB20068238D /* EZ Wallet */,
+				4023D82B241F6BB20068238D /* Products */,
+				1A6193F63D65EE1010A7714F /* Pods */,
+				E18A02F7F70918A54734A50F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4023D82B241F6BB20068238D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4023D82A241F6BB20068238D /* EZ Wallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4023D82C241F6BB20068238D /* EZ Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				4023D844241F6EC20068238D /* SessionVariables */,
+				403073172420811B006FEB48 /* Helpers */,
+				4023D84F241F74F70068238D /* ObjectModels */,
+				4023D845241F6ECF0068238D /* TableViewCells */,
+				403E42A9242DD11400560302 /* CollectionViewCells */,
+				4086ABDD242049F700BD141D /* ViewControllers */,
+				40EEC27F2421230E0019AE8A /* Storyboards */,
+				4023D82D241F6BB20068238D /* AppDelegate.swift */,
+				4023D82F241F6BB20068238D /* SceneDelegate.swift */,
+				4023D839241F6BB40068238D /* Assets.xcassets */,
+				4023D83E241F6BB40068238D /* Info.plist */,
+				4023D836241F6BB20068238D /* EZ_Wallet.xcdatamodeld */,
+			);
+			path = "EZ Wallet";
+			sourceTree = "<group>";
+		};
+		4023D844241F6EC20068238D /* SessionVariables */ = {
+			isa = PBXGroup;
+			children = (
+				4023D84D241F74B80068238D /* Constants.swift */,
+				40E6CAE2242DAB6400382E9D /* ConstantsUserDefaults.swift */,
+				400F0C2F241F83850061AE70 /* ConstantsSqlite.swift */,
+				4023D84B241F71C20068238D /* SuperGlobals.swift */,
+			);
+			path = SessionVariables;
+			sourceTree = "<group>";
+		};
+		4023D845241F6ECF0068238D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4023D846241F6F040068238D /* TableViewCellMonth.swift */,
+				40EEC2762420E7620019AE8A /* TableViewCellExpense.swift */,
+				4030731524206AD8006FEB48 /* TableViewCellCategory.swift */,
+				40EE2B802422514400B4E59B /* TableViewCellBorrowEvent.swift */,
+				4030236C24223BE500352ABF /* TableViewCellTransaction.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		4023D84F241F74F70068238D /* ObjectModels */ = {
+			isa = PBXGroup;
+			children = (
+				400F0C26241F7BAE0061AE70 /* Year.swift */,
+				4023D850241F75DC0068238D /* Month.swift */,
+				40307310242062CC006FEB48 /* Expense.swift */,
+				403073132420636E006FEB48 /* Category.swift */,
+				40EE2B772422503800B4E59B /* BorrowEvent.swift */,
+				40302364242231E500352ABF /* Transaction.swift */,
+			);
+			path = ObjectModels;
+			sourceTree = "<group>";
+		};
+		40276214242D2FDE0038DC56 /* TabAbout */ = {
+			isa = PBXGroup;
+			children = (
+				400AA951243F950F00081104 /* VcAbout.swift */,
+			);
+			path = TabAbout;
+			sourceTree = "<group>";
+		};
+		4030235C2422251F00352ABF /* TabSpending */ = {
+			isa = PBXGroup;
+			children = (
+				4023D831241F6BB20068238D /* ViewController.swift */,
+				4030730324206033006FEB48 /* VcMonth.swift */,
+				4030730C24206085006FEB48 /* VcCreateExpense.swift */,
+				40CA799A2421ABAA007AF0A2 /* VcEditExpense.swift */,
+				4030730E242060AC006FEB48 /* VcCategories.swift */,
+			);
+			path = TabSpending;
+			sourceTree = "<group>";
+		};
+		4030235D2422254B00352ABF /* TabLending */ = {
+			isa = PBXGroup;
+			children = (
+				4030235E242225C000352ABF /* VcLending.swift */,
+				40EE2B822422813200B4E59B /* VcCreateBorrowEvent.swift */,
+				406ADC582428E93900DAAE66 /* VcEditBorrowEvent.swift */,
+				40F2931824285E8F001F5285 /* VcBorrower.swift */,
+			);
+			path = TabLending;
+			sourceTree = "<group>";
+		};
+		4030236624223B5500352ABF /* TabStatistics */ = {
+			isa = PBXGroup;
+			children = (
+				4030236824223BA300352ABF /* VcStatistics.swift */,
+			);
+			path = TabStatistics;
+			sourceTree = "<group>";
+		};
+		4030236724223B7100352ABF /* TabHelp */ = {
+			isa = PBXGroup;
+			children = (
+				40402A80242DD3FD00346AC2 /* VcHelp.swift */,
+			);
+			path = TabHelp;
+			sourceTree = "<group>";
+		};
+		403073172420811B006FEB48 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				403073182420817D006FEB48 /* AlertControllerManager.swift */,
+				400AA953243F9F9600081104 /* MoneyFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		403E42A9242DD11400560302 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				403E42AA242DD13700560302 /* CollectionViewCellHelp.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		4086ABDD242049F700BD141D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4030235C2422251F00352ABF /* TabSpending */,
+				4030235D2422254B00352ABF /* TabLending */,
+				4030236624223B5500352ABF /* TabStatistics */,
+				4030236724223B7100352ABF /* TabHelp */,
+				40276214242D2FDE0038DC56 /* TabAbout */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		40EEC27F2421230E0019AE8A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4023D83B241F6BB40068238D /* LaunchScreen.storyboard */,
+				4023D833241F6BB20068238D /* Main.storyboard */,
+				4037FA38242125DD006CEB43 /* Spending.storyboard */,
+				4037FA3A242125EB006CEB43 /* Lending.storyboard */,
+				4037FA3C2421260A006CEB43 /* Statistics.storyboard */,
+				4037FA3E24212618006CEB43 /* Help.storyboard */,
+				40276215242D2FFA0038DC56 /* About.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E18A02F7F70918A54734A50F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550ECC05833DF3EA0384C784 /* libPods-EZ Wallet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4023D829241F6BB20068238D /* EZ Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4023D841241F6BB40068238D /* Build configuration list for PBXNativeTarget "EZ Wallet" */;
+			buildPhases = (
+				65F72C2CE9925CDBBFE3A14E /* [CP] Check Pods Manifest.lock */,
+				4023D826241F6BB20068238D /* Sources */,
+				4023D827241F6BB20068238D /* Frameworks */,
+				4023D828241F6BB20068238D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EZ Wallet";
+			productName = "EZ Wallet";
+			productReference = 4023D82A241F6BB20068238D /* EZ Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4023D822241F6BB20068238D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jeofferson Dela Peña";
+				TargetAttributes = {
+					4023D829241F6BB20068238D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4023D825241F6BB20068238D /* Build configuration list for PBXProject "EZ Wallet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4023D821241F6BB20068238D;
+			productRefGroup = 4023D82B241F6BB20068238D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4023D829241F6BB20068238D /* EZ Wallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4023D828241F6BB20068238D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4023D83D241F6BB40068238D /* LaunchScreen.storyboard in Resources */,
+				4037FA3B242125EC006CEB43 /* Lending.storyboard in Resources */,
+				40276216242D2FFA0038DC56 /* About.storyboard in Resources */,
+				4023D83A241F6BB40068238D /* Assets.xcassets in Resources */,
+				4037FA3D2421260A006CEB43 /* Statistics.storyboard in Resources */,
+				4037FA39242125DD006CEB43 /* Spending.storyboard in Resources */,
+				4023D835241F6BB20068238D /* Main.storyboard in Resources */,
+				4037FA3F24212618006CEB43 /* Help.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F72C2CE9925CDBBFE3A14E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EZ Wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4023D826241F6BB20068238D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EE2B812422514400B4E59B /* TableViewCellBorrowEvent.swift in Sources */,
+				400AA954243F9F9600081104 /* MoneyFormatter.swift in Sources */,
+				4030235F242225C000352ABF /* VcLending.swift in Sources */,
+				40E6CAE3242DAB6400382E9D /* ConstantsUserDefaults.swift in Sources */,
+				403E42AB242DD13700560302 /* CollectionViewCellHelp.swift in Sources */,
+				40CA799B2421ABAA007AF0A2 /* VcEditExpense.swift in Sources */,
+				403073192420817D006FEB48 /* AlertControllerManager.swift in Sources */,
+				40307311242062CC006FEB48 /* Expense.swift in Sources */,
+				4023D832241F6BB20068238D /* ViewController.swift in Sources */,
+				406ADC592428E93900DAAE66 /* VcEditBorrowEvent.swift in Sources */,
+				4023D838241F6BB20068238D /* EZ_Wallet.xcdatamodeld in Sources */,
+				4030730424206033006FEB48 /* VcMonth.swift in Sources */,
+				4023D82E241F6BB20068238D /* AppDelegate.swift in Sources */,
+				4023D830241F6BB20068238D /* SceneDelegate.swift in Sources */,
+				40F2931924285E8F001F5285 /* VcBorrower.swift in Sources */,
+				4030730D24206085006FEB48 /* VcCreateExpense.swift in Sources */,
+				4030236924223BA400352ABF /* VcStatistics.swift in Sources */,
+				4030731624206AD8006FEB48 /* TableViewCellCategory.swift in Sources */,
+				400F0C27241F7BAE0061AE70 /* Year.swift in Sources */,
+				4023D851241F75DC0068238D /* Month.swift in Sources */,
+				40302365242231E500352ABF /* Transaction.swift in Sources */,
+				40402A81242DD3FD00346AC2 /* VcHelp.swift in Sources */,
+				40EE2B832422813200B4E59B /* VcCreateBorrowEvent.swift in Sources */,
+				4023D847241F6F040068238D /* TableViewCellMonth.swift in Sources */,
+				400F0C30241F83850061AE70 /* ConstantsSqlite.swift in Sources */,
+				403073142420636E006FEB48 /* Category.swift in Sources */,
+				4030236D24223BE500352ABF /* TableViewCellTransaction.swift in Sources */,
+				40EE2B782422503800B4E59B /* BorrowEvent.swift in Sources */,
+				40EEC2772420E7620019AE8A /* TableViewCellExpense.swift in Sources */,
+				400AA952243F950F00081104 /* VcAbout.swift in Sources */,
+				4023D84C241F71C20068238D /* SuperGlobals.swift in Sources */,
+				4030730F242060AC006FEB48 /* VcCategories.swift in Sources */,
+				4023D84E241F74B80068238D /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4023D833241F6BB20068238D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4023D834241F6BB20068238D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4023D83B241F6BB40068238D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4023D83C241F6BB40068238D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4023D83F241F6BB40068238D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4023D840241F6BB40068238D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4023D842241F6BB40068238D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9F8920A6C5ACB8DD03E0F4 /* Pods-EZ Wallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB4WP9Z9N6;
+				INFOPLIST_FILE = "EZ Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeofferson.EZ-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4023D843241F6BB40068238D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8762758F88D644C6065BEAD /* Pods-EZ Wallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB4WP9Z9N6;
+				INFOPLIST_FILE = "EZ Wallet/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeofferson.EZ-Wallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4023D825241F6BB20068238D /* Build configuration list for PBXProject "EZ Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4023D83F241F6BB40068238D /* Debug */,
+				4023D840241F6BB40068238D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4023D841241F6BB40068238D /* Build configuration list for PBXNativeTarget "EZ Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4023D842241F6BB40068238D /* Debug */,
+				4023D843241F6BB40068238D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4023D836241F6BB20068238D /* EZ_Wallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4023D837241F6BB20068238D /* EZ_Wallet.xcdatamodel */,
+			);
+			currentVersion = 4023D837241F6BB20068238D /* EZ_Wallet.xcdatamodel */;
+			path = EZ_Wallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4023D822241F6BB20068238D /* Project object */;
+}

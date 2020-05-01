@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2yc-aG-zWn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="t5a-VC-DTT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7o-z0-fD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2yc-aG-zWn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="help_light" selectedImage="help_fill_light" id="vae-iU-d5F"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5eS-3F-v2i">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="bg2"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i0w-yL-Y16" kind="relationship" relationship="rootViewController" id="1N1-Ut-j7z"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2330" y="840"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="olw-we-cTg">
+            <objects>
+                <viewController id="i0w-yL-Y16" customClass="VcHelp" customModule="EZ_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J1E-kD-NlR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a" translatesAutoresizingMaskIntoConstraints="NO" id="DXy-Np-sCO">
+                                <rect key="frame" x="0.0" y="108" width="414" height="605"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-Cv-HRV">
+                                <rect key="frame" x="339" y="738" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Bp-ja-k26"/>
+                                    <constraint firstAttribute="width" constant="50" id="bn6-XZ-emq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="next_light"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="i0w-yL-Y16" eventType="touchUpInside" id="Kkg-zo-r4c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGt-5A-NtR">
+                                <rect key="frame" x="25" y="738" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Jc-vR-vx2"/>
+                                    <constraint firstAttribute="width" constant="50" id="R0S-QV-coq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="prev_light"/>
+                                <connections>
+                                    <action selector="btnPrevious:" destination="i0w-yL-Y16" eventType="touchUpInside" id="WrI-v6-klR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan your savings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zc-ok-870">
+                                <rect key="frame" x="115" y="723" width="184" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="bg2"/>
+                        <constraints>
+                            <constraint firstItem="LGt-5A-NtR" firstAttribute="leading" secondItem="1PC-u6-Bab" secondAttribute="leading" constant="25" id="0kO-rS-dnS"/>
+                            <constraint firstItem="1PC-u6-Bab" firstAttribute="bottom" secondItem="LGt-5A-NtR" secondAttribute="bottom" constant="25" id="C9x-8U-gRH"/>
+                            <constraint firstItem="DXy-Np-sCO" firstAttribute="leading" secondItem="1PC-u6-Bab" secondAttribute="leading" id="CVR-uM-fNX"/>
+                            <constraint firstItem="GmO-Cv-HRV" firstAttribute="leading" secondItem="6zc-ok-870" secondAttribute="trailing" constant="40" id="Fly-eK-1dG"/>
+                            <constraint firstItem="DXy-Np-sCO" firstAttribute="top" secondItem="1PC-u6-Bab" secondAttribute="top" constant="20" id="J2P-wY-h2S"/>
+                            <constraint firstItem="DXy-Np-sCO" firstAttribute="trailing" secondItem="1PC-u6-Bab" secondAttribute="trailing" id="ZAa-85-9hg"/>
+                            <constraint firstItem="1PC-u6-Bab" firstAttribute="bottom" secondItem="DXy-Np-sCO" secondAttribute="bottom" constant="100" id="kZU-zk-IcN"/>
+                            <constraint firstItem="1PC-u6-Bab" firstAttribute="bottom" secondItem="GmO-Cv-HRV" secondAttribute="bottom" constant="25" id="mmV-99-UI6"/>
+                            <constraint firstItem="6zc-ok-870" firstAttribute="leading" secondItem="LGt-5A-NtR" secondAttribute="trailing" constant="40" id="uUI-FS-m29"/>
+                            <constraint firstItem="1PC-u6-Bab" firstAttribute="bottom" secondItem="6zc-ok-870" secondAttribute="bottom" constant="10" id="wXh-Wx-Joi"/>
+                            <constraint firstItem="6zc-ok-870" firstAttribute="top" secondItem="DXy-Np-sCO" secondAttribute="bottom" constant="10" id="waV-Fk-EGJ"/>
+                            <constraint firstItem="1PC-u6-Bab" firstAttribute="trailing" secondItem="GmO-Cv-HRV" secondAttribute="trailing" constant="25" id="yqN-Et-NFC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1PC-u6-Bab"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="Rat-zh-8bk"/>
+                    <connections>
+                        <outlet property="btnNextOutlet" destination="GmO-Cv-HRV" id="YRx-pq-eBe"/>
+                        <outlet property="btnPrevOutlet" destination="LGt-5A-NtR" id="dmb-vs-5cC"/>
+                        <outlet property="imgHelp" destination="DXy-Np-sCO" id="aRR-mR-9UN"/>
+                        <outlet property="lblHelpDescription" destination="6zc-ok-870" id="1S9-2b-aj4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1er-Fa-17k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3134.7826086956525" y="839.73214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a" width="1242" height="2688"/>
+        <image name="help_fill_light" width="25" height="25"/>
+        <image name="help_light" width="25" height="25"/>
+        <image name="next_light" width="150" height="150"/>
+        <image name="prev_light" width="150" height="150"/>
+        <namedColor name="bg2">
+            <color red="0.86274509803921573" green="0.87058823529411766" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="color_accent"/>
+</document>
